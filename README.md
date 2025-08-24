@@ -19,8 +19,8 @@ msg= otp
 #include our email automation 
 s = smtplib.SMTP('smtp.gmail.com', 587)
 s.starttls()
-s.login("gssmanikanta002@gmail.com", "glsjbopmmundwazo") #app passcode
-user="gssmanikanta002@gmail.com"
+s.login("yourexample@gmail.com", "abcdefghijkl") #app passcode
+user="example@gmail.com"
 emailid = input("Enter the mail which you want to send OTP: ")
 s.sendmail(user,emailid,msg)
 a = input("Enter Your OTP >>: ")
